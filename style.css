@@ -4,20 +4,24 @@
 }
 :root{
     --bg: aliceblue;
+    --color: black;
 }
 body {
     /* background: blue; */
-    font-family:  Arial, sans-serif;
+    font-family:  serif;
     font-size: large;
+    background: black;
+    color: aliceblue;
 }
 .logo {
     /* border: 2px solid blue; */
     /* min-height: 100%; */
+    padding: 20px;
 
 }
 nav {
     display: flex;
-    background-color: var(--bg);
+    color: var(--bg);
     border-radius: 2px;
     border: 2px solid ;
     align-items: center;
@@ -38,14 +42,20 @@ nav {
     /* border: 2px solid blue; */
     padding: 2px;
     list-style: none;
-    background-color: aliceblue;
+    
 }
 a {
     text-decoration: none;
+    color: var(--bg);
 }
 .list ul li {
     padding: 10px;
     margin: 5px;
+    transition: all 1s;
+}
+.list li:hover {
+    color: rgb(9, 66, 66);
+    background: blanchedalmond;
 }
 
 header {
@@ -75,10 +85,11 @@ header .search {
     text-align: center;
     /* scale: 2; */
 }
+
 header .search input,header .search button {
     /* padding: 20px; */
     margin: 10px;
-    outline: none;
+    outline: blanchedalmond;
     /* color: skyblue; */
     border-radius: 10px;
     border: 0;
@@ -86,11 +97,20 @@ header .search input,header .search button {
 
 }
 header .search input {
-    background: rgb(247, 234, 240);
+    background: var(--bg);
     width: 40%;
-    border-radius: 100px;
+    border-radius: 100px 0 0 0 ;
     /* padding: 20px; */
     padding: 15px 40px;
+    border: 2px dashed rgb(86, 195, 173);
+}
+input::placeholder{
+    color: rgb(197, 88, 179);
+}
+
+input:focus::placeholder{
+ color: var(--bg);   
+ /* background: red; */
 }
 header .search button {
     display: none;
@@ -107,6 +127,11 @@ header .search button {
     padding-left: 10px;
     margin-bottom: 20px;
 }
+@media (max-width:700px) {
+    .search-list-container {
+        width: 90%;
+    }
+}
 .search-list {
     display: flex;
     background-color: aliceblue;
@@ -114,6 +139,11 @@ header .search button {
     border-bottom: 2px solid rgb(241, 124, 236);
     justify-content: space-between;
     color: rgb(4, 43, 43);
+    transition: all 0.8s;
+}
+.search-list:hover {
+    color: aqua;
+    background: black;
 }
 .search-list span {
     position: relative;
@@ -148,9 +178,10 @@ header .search button {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: var(--bg);
+    color: var(--bg);
     position: sticky;
     bottom: 0;
+    border-top:  2px solid ;
 }
 
 
