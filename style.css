@@ -3,7 +3,7 @@
     padding: 0;
 }
 :root{
-    --bg: aliceblue;
+    --bg: rgb(240, 248, 255);
     --color: black;
 }
 body {
@@ -21,6 +21,9 @@ body {
 }
 nav {
     display: flex;
+    position: sticky;
+    top: 0;
+    background: rgba(124, 194, 214, 0.282);
     color: var(--bg);
     border-radius: 2px;
     border: 2px solid ;
@@ -99,9 +102,9 @@ header .search input,header .search button {
 header .search input {
     background: var(--bg);
     width: 40%;
-    border-radius: 100px 0 0 0 ;
+    border-radius: 0 ;
     /* padding: 20px; */
-    padding: 15px 40px;
+    padding: 15px 30px;
     border: 2px dashed rgb(86, 195, 173);
 }
 input::placeholder{
@@ -134,7 +137,7 @@ header .search button {
 }
 .search-list {
     display: flex;
-    background-color: aliceblue;
+    background-color: var(--bg);
     padding: 10px;
     border-bottom: 2px solid rgb(241, 124, 236);
     justify-content: space-between;
@@ -174,6 +177,7 @@ header .search button {
 .content {
     margin-top: 10px;
     /* padding: 10px; */
+    height: 100vh;
 }
 footer {
     text-align: center;
