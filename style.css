@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg: aliceblue;
+}
+body {
+    /* background: blue; */
+    font-family:  Arial, sans-serif;
+    font-size: large;
+}
+.logo {
+    /* border: 2px solid blue; */
+    /* min-height: 100%; */
+
+}
+nav {
+    display: flex;
+    background-color: var(--bg);
+    border-radius: 2px;
+    border: 2px solid ;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.list {
+    display: flex;
+    /* border: 2px solid black; */
+    flex-wrap: nowrap;
+    flex-grow: 2;
+
+    justify-content: flex-end;
+}
+
+.list ul {
+    display: flex;
+    /* border: 2px solid blue; */
+    padding: 2px;
+    list-style: none;
+    background-color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+.list ul li {
+    padding: 10px;
+    margin: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    /* height: 80px; */
+}
+header .title {
+    font-size: 40px;
+    font: 100 ;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+header .search {
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+    /* scale: 2; */
+
+}
+header .search input,header .search button {
+    padding: 20px;
+    margin: 10px;
+    outline: none;
+    /* color: skyblue; */
+    border-radius: 10px;
+    border: 0;
+    font-size: larger;
+}
+header .search input {
+    background: rgb(247, 234, 240);
+    width: 40%;
+}
+.content {
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--bg);
+    position: sticky;
+    bottom: 0;
+}
