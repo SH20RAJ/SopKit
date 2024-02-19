@@ -52,11 +52,9 @@ let search = e => {
     html = searchlist.map((tool)=>{
     return `<a href="#"><li class="search-list"> ${tool.name} <span>${tool.views}</span></li></a>`;
     }
-)
-searchlistcontainer.innerHTML=""
-html.forEach(e => {
-    searchlistcontainer.insertAdjacentHTML('afterbegin',e);
-});
+).join("")
+searchlistcontainer.innerHTML=html
+
     
 }
 // }
