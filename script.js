@@ -30,4 +30,3 @@ let html = "";
 document.getElementById('search').addEventListener("keyup", search);
 })();
 
-
