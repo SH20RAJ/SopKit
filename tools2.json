@@ -1,0 +1,83 @@
+[
+  {
+      "name": "HTML/CSS/JS unquoted attribute value validator",
+      "slug": "html-css-js-unquoted-attribute-value-validator",
+      "logo": "",
+      "link": "./tools/unquoted-attributes",
+      "title": "HTML/CSS/JS unquoted attribute value validator - SopKit",
+      "keywords": ["HTML", "CSS", "JS", "validator", "attribute", "unquoted"],
+      "desc": "Validate unquoted attribute values in HTML, CSS, and JavaScript with the HTML/CSS/JS unquoted attribute value validator tool by SopKit."
+  },
+  {
+      "name": "Ambiguous ampersand checker for HTML",
+      "slug": "ambiguous-ampersand-checker-for-html",
+      "logo": "",
+      "link": "./tools/ampersands",
+      "title": "Ambiguous ampersand checker for HTML - SopKit",
+      "keywords": ["HTML", "ampersand", "checker", "ambiguous"],
+      "desc": "Check for ambiguous ampersands in HTML documents using the Ambiguous ampersand checker tool by SopKit."
+  },
+  {
+      "name": "Custom HTML element name validator",
+      "slug": "custom-html-element-name-validator",
+      "logo": "",
+      "link": "./tools/custom-element-name",
+      "title": "Custom HTML element name validator - SopKit",
+      "keywords": ["HTML", "validator", "custom", "element", "name"],
+      "desc": "Validate custom HTML element names easily with the Custom HTML element name validator tool by SopKit."
+  },
+  {
+      "name": "CSS escaper",
+      "slug": "css-escaper",
+      "logo": "",
+      "link": "./tools/css-escapes",
+      "title": "CSS escaper - SopKit",
+      "keywords": ["CSS", "escaper", "escape"],
+      "desc": "Escape CSS characters effortlessly with the CSS escaper tool by SopKit."
+  },
+  {
+      "name": "Unquoted CSS font family name validator",
+      "slug": "unquoted-css-font-family-name-validator",
+      "logo": "",
+      "link": "./tools/font-family",
+      "title": "Unquoted CSS font family name validator - SopKit",
+      "keywords": ["CSS", "validator", "font", "family", "unquoted"],
+      "desc": "Validate unquoted font family names in CSS with the Unquoted CSS font family name validator tool by SopKit."
+  },
+  {
+      "name": "JavaScript escaper",
+      "slug": "javascript-escaper",
+      "logo": "",
+      "link": "./tools/js-escapes",
+      "title": "JavaScript escaper - SopKit",
+      "keywords": ["JavaScript", "escaper", "escape"],
+      "desc": "Escape JavaScript characters effortlessly with the JavaScript escaper tool by SopKit."
+  },
+  {
+      "name": "JavaScript operator precedence",
+      "slug": "javascript-operator-precedence",
+      "logo": "",
+      "link": "./tools/operator-precedence",
+      "title": "JavaScript operator precedence - SopKit",
+      "keywords": ["JavaScript", "operator", "precedence"],
+      "desc": "Check the precedence of JavaScript operators easily with the JavaScript operator precedence tool by SopKit."
+  },
+  {
+      "name": "JavaScript variable name validator",
+      "slug": "javascript-variable-name-validator",
+      "logo": "",
+      "link": "./tools/js-variables",
+      "title": "JavaScript variable name validator - SopKit",
+      "keywords": ["JavaScript", "validator", "variable", "name"],
+      "desc": "Validate JavaScript variable names effortlessly with the JavaScript variable name validator tool by SopKit."
+  },
+  {
+      "name": "JavaScript property name validator",
+      "slug": "javascript-property-name-validator",
+      "logo": "",
+      "link": "./tools/js-properties",
+      "title": "JavaScript property name validator - SopKit",
+      "keywords": ["JavaScript", "validator", "property", "name"],
+      "desc": "Validate JavaScript property names effortlessly"
+  }
+]

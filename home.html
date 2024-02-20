@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SopKit - Your Ultimate Web Developer Tools</title>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search for a tool...">
+  <ul id="toolList">
+    <!-- Populate this list dynamically using JavaScript -->
+  </ul>
+
+  <script>
+    // Fetch the list of tools from the JSON file
+    fetch('tools2.json')
+      .then(response => response.json())
+      .then(data => {
+        const toolList = document.getElementById('toolList');
+        const searchInput = document.getElementById('searchInput');
+
+        // Function to filter tools based on user input
+        const filterTools = () => {
+          const searchTerm = searchInput.value.toLowerCase();
+          const filteredTools = data.filter(tool => {
+            return tool.title.toLowerCase().includes(searchTerm) ||
+                   tool.desc.toLowerCase().includes(searchTerm) ||
+                   tool.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm));
+          });
+
+          // Clear previous list items
+          toolList.innerHTML = '';
+
+          // Populate the tool list with filtered tools
+          filteredTools.forEach(tool => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="${tool.link}">${tool.title}</a>: ${tool.views}`;
+            toolList.appendChild(listItem);
+          });
+        };
+
+        // Listen for input events on the search input
+        searchInput.addEventListener('input', filterTools);
+
+        // Initially populate the tool list
+        filterTools();
+      })
+      .catch(error => console.error('Error fetching tools:', error));
+  </script>
+</body>
+</html>
