@@ -19,7 +19,7 @@ let html = "";
 
     // Generate HTML for the filtered tools
     html = searchlist.map((tool) => {
-        return `<a href="#"><li class="search-list"> ${tool.title} <span>${tool.view}</span></li></a>`;
+        return `<a href="#"><li class="search-list"> ${tool.title} <span>${tool.views}</span></li></a>`;
     }).join("");
 
     // Update the search list container with the generated HTML
