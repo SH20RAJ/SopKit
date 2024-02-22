@@ -25,7 +25,7 @@ var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS7EF_2Yz5C_RbVKsSmOj
       return (
         tool.title.toLowerCase().includes(document.getElementById("search").value.toLowerCase()) ||
         tool.desc.toLowerCase().includes(document.getElementById("search").value.toLowerCase()) ||
-        tool.link.toLowerCase().includes(document.getElementById("search").value.toLowerCase()) // Assuming 'keywords' is a single string, not an array
+        tool.keywords.toLowerCase().includes(document.getElementById("search").value.toLowerCase()) // Assuming 'keywords' is a single string, not an array
       );
     });
 
